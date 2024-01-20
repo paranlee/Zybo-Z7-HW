@@ -302,7 +302,9 @@ proc create_root_design { parentCell } {
   set axi_gpio_led [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio axi_gpio_led ]
   set_property -dict [ list \
    CONFIG.C_GPIO_WIDTH {4} \
-   CONFIG.GPIO_BOARD_INTERFACE {leds_4bits} \
+   CONFIG.C_DOUT_DEFAULT {0x00000000} \
+   CONFIG.C_TRI_DEFAULT {0xFFFFFFFF} \
+   CONFIG.NUM_PORTS {4} \
    CONFIG.USE_BOARD_FLOW {true} \
  ] $axi_gpio_led
 
@@ -314,8 +316,8 @@ proc create_root_design { parentCell } {
    CONFIG.C_GPIO2_WIDTH {4} \
    CONFIG.C_GPIO_WIDTH {4} \
    CONFIG.C_IS_DUAL {1} \
-   CONFIG.GPIO2_BOARD_INTERFACE {btns_4bits} \
-   CONFIG.GPIO_BOARD_INTERFACE {sws_4bits} \
+   #CONFIG.GPIO2_BOARD_INTERFACE {btns_4bits} \
+   #CONFIG.GPIO_BOARD_INTERFACE {sws_4bits} \
    CONFIG.USE_BOARD_FLOW {true} \
  ] $axi_gpio_sw_btn
 

@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2022.1.2 (64-bit)
+# SW Build 3605665 on Fri Aug  5 22:52:02 MDT 2022
+# IP Build 3603185 on Sat Aug  6 04:07:44 MDT 2022
+# Start of session at: Mon Jan 15 06:27:53 2024
+# Process ID: 9689
+# Current directory: /home/sgdh/Zybo-Z7-HW/proj/Zybo-Z7-HW.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/impl/ip
+# Command line: vivado -notrace -mode batch -source run_ippack.tcl
+# Log file: /home/sgdh/Zybo-Z7-HW/proj/Zybo-Z7-HW.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/impl/ip/vivado.log
+# Journal file: /home/sgdh/Zybo-Z7-HW/proj/Zybo-Z7-HW.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/impl/ip/vivado.jou
+# Running On: ubuntu, OS: Linux, CPU Frequency: 3408.000 MHz, CPU Physical cores: 4, Host memory: 8286 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+ipx::create_core: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2748.172 ; gain = 2.992 ; free physical = 2015 ; free virtual = 5463
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 15 06:28:09 2024...
